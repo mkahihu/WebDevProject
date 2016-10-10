@@ -2,18 +2,24 @@
 header
 {
   text-align:center;
-  color: #000000
-  text-shadow: 3px 3px #323232
+  color: #000000;
+  text-shadow: 3px 3px #323232;
+}
+
+.display
+{
+  text-align:center; 
 }
 
 canvas
 {
-  Border:solid 2px #000000
+  border:solid 2px #000000;
+  background-color:white;
 }
 
-Body 
+body 
 {
- background-color: #e5e5e5
+ background-color: #e5e5e5;
 }
 
 
