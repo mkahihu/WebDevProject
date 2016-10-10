@@ -21,7 +21,7 @@ function createCircle(w, h, pen)
   pen.fillStyle = randomRGB();
   x = randDouble(0,w)
   y = randDouble(0,h);
-  //pen.beginPath();
+  pen.beginPath();
   pen.arc(x,y,50,0,2*Math.PI);
   pen.fill();
   setTimeout(function(){createCircle(w, h, pen)}, 1000);
