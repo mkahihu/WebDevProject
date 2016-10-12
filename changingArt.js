@@ -23,8 +23,20 @@ function createCircle(w, h, pen)
   y = randDouble(0,h);
   pen.beginPath();
   pen.arc(x,y,50,0,2*Math.PI);
+  pen.closepath();
   pen.fill();
   setTimeout(function(){createCircle(w, h, pen)}, 1000);
+}
+
+function createTriangle(w, h, pen)
+{
+    pen.fillStyle = randomRGB();
+    pen.beginPath();
+    pen.moveTo(randDouble(0,w),randDouble(0,h));
+    pen.lineTo(randDouble(0,w),randDouble(0,h));
+    pen.lineTo(randDouble(0,w),randDouble(0,h));
+    pen.fill();
+    setTimeout(function(){createTriangle(w, h, pen)}, 1000);    
 }
 
 function main()
@@ -35,5 +47,5 @@ function main()
   var h = canvas.height;
   createRectangle(w, h, pen);
   createCircle(w, h, pen);
-
+  createTriangle(w, h, pen);
 }
