@@ -3,7 +3,9 @@ header
 {
   text-align:center;
   color: #000000;
-  //text-shadow: 3px 3px #323232;
+  font-size: 2em;
+  text-shadow: 3px 3px #323232;
+  
 }
 
 .display
